@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>TaskFlow - Smart To Do App</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="app-container">
+      <!-- Header -->
+      <header class="header">
+        <div>
+          <h1>Good Evening 👋</h1>
+          <p>Stay productive and organize your day beautifully.</p>
+        </div>
+
+        <div class="date">
+          <span id="currentDate"></span>
+        </div>
+      </header>
+
+      <!-- Search -->
+      <div class="search-box">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="🔍 Search your tasks..." />
+      </div>
+
+      <!-- Add Task Section -->
+      <section class="task-input">
+        <input
+          type="text"
+          id="taskInput"
+          placeholder="What needs to be done today?" />
+
+        <button id="addTaskBtn">+ Add Task</button>
+      </section>
+
+      <!-- Statistics -->
+      <section class="stats">
+        <div class="stat-card">
+          <h3 id="pendingCount">0</h3>
+          <p>Pending</p>
+        </div>
+
+        <div class="stat-card">
+          <h3 id="completedCount">0</h3>
+          <p>Completed</p>
+        </div>
+
+        <div class="stat-card">
+          <h3 id="totalCount">0</h3>
+          <p>Total Tasks</p>
+        </div>
+      </section>
+
+      <!-- Progress -->
+      <section class="progress-section">
+        <div class="progress-header">
+          <h3>Today's Progress</h3>
+
+          <span id="progressPercent"> 0% </span>
+        </div>
+
+        <div class="progress-bar">
+          <div id="progressFill"></div>
+        </div>
+      </section>
+
+      <!-- Task Lists -->
+
+      <section class="lists-container">
+        <!-- Pending -->
+
+        <div class="task-section">
+          <div class="section-title">
+            <h2>📝 Pending Tasks</h2>
+
+            <span id="pendingText"> 0 pending </span>
+          </div>
+
+          <div id="pendingTasks" class="task-list">
+            <!-- Tasks inserted using JS -->
+          </div>
+        </div>
+
+        <!-- Completed -->
+
+        <div class="task-section">
+          <div class="section-title">
+            <h2>✅ Completed Tasks</h2>
+
+            <span id="completedText"> 0 completed </span>
+          </div>
+
+          <div id="completedTasks" class="task-list">
+            <!-- Tasks inserted using JS -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Clear Button -->
+
+      <button id="clearCompleted" class="clear-btn">
+        Clear Completed Tasks
+      </button>
+    </div>
+
+    <!-- Toast Notification -->
+
+    <div id="toast" class="toast">Task Added Successfully</div>
+
+    <footer>
+      <hr />
+      <br />    
+      <p>© 2026 Uzma Noorulain. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

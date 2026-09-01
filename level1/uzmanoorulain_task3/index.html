@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="background">
+      <div class="circle one"></div>
+      <div class="circle two"></div>
+    </div>
+
+    <div class="container">
+      <div class="card">
+        <h1>🌡 Temperature Converter</h1>
+        <p class="subtitle">
+          Instantly convert between Celsius, Fahrenheit & Kelvin
+        </p>
+
+        <div class="input-group">
+          <label>Enter Temperature</label>
+
+          <input type="text" id="temperature" placeholder="e.g. 25" />
+        </div>
+
+        <div class="input-group">
+          <label>Input Unit</label>
+
+          <select id="unit">
+            <option value="c">Celsius (°C)</option>
+            <option value="f">Fahrenheit (°F)</option>
+            <option value="k">Kelvin (K)</option>
+          </select>
+        </div>
+
+        <button onclick="convertTemperature()">Convert Temperature</button>
+
+        <p id="error"></p>
+
+        <div class="results">
+          <div class="box">
+            <h3>Celsius</h3>
+            <span id="celsius">--</span>
+          </div>
+
+          <div class="box">
+            <h3>Fahrenheit</h3>
+            <span id="fahrenheit">--</span>
+          </div>
+
+          <div class="box">
+            <h3>Kelvin</h3>
+            <span id="kelvin">--</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

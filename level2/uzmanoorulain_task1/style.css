@@ -1,0 +1,219 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI, sans-serif;
+}
+
+body{
+
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:
+    linear-gradient(135deg,#1d2671,#c33764);
+
+}
+
+.calculator{
+
+    width:380px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+    border-radius:25px;
+
+    padding:25px;
+
+    border:1px solid rgba(255,255,255,.15);
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.35);
+
+}
+
+.display{
+
+    background:#0f172a;
+
+    border-radius:18px;
+
+    padding:20px;
+
+    margin-bottom:22px;
+
+    text-align:right;
+
+    word-wrap:break-word;
+
+    min-height:110px;
+
+}
+
+#expression{
+
+    color:#94a3b8;
+
+    font-size:20px;
+
+    min-height:30px;
+
+}
+
+#result{
+
+    margin-top:10px;
+
+    color:#fff;
+
+    font-size:40px;
+
+    font-weight:bold;
+
+}
+
+.buttons{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:15px;
+
+}
+
+button{
+
+    height:70px;
+
+    border:none;
+
+    border-radius:16px;
+
+    font-size:24px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    font-weight:600;
+
+}
+
+button:hover{
+
+    transform:translateY(-3px);
+
+}
+
+button:active{
+
+    transform:scale(.96);
+
+}
+
+.number{
+
+    background:#f1f5f9;
+
+}
+
+.number:hover{
+
+    background:#e2e8f0;
+
+}
+
+.operator{
+
+    background:#3b82f6;
+
+    color:white;
+
+}
+
+.operator:hover{
+
+    background:#2563eb;
+
+}
+
+.equals{
+
+    background:#10b981;
+
+    color:white;
+
+    grid-row:span 2;
+
+    height:155px;
+
+}
+
+.equals:hover{
+
+    background:#059669;
+
+}
+
+.clear{
+
+    background:#ef4444;
+
+    color:white;
+
+}
+
+.clear:hover{
+
+    background:#dc2626;
+
+}
+
+.backspace{
+
+    background:#f59e0b;
+
+    color:white;
+
+}
+
+.backspace:hover{
+
+    background:#d97706;
+
+}
+
+.decimal{
+
+    background:#f1f5f9;
+
+}
+
+.zero{
+
+    grid-column:span 2;
+}
+
+@media(max-width:430px){
+
+.calculator{
+
+    width:95%;
+}
+
+button{
+
+    height:65px;
+}
+
+#result{
+
+    font-size:34px;
+}
+
+}
