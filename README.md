@@ -74,7 +74,7 @@ Oasis-Infobyte-Internship/
 │
 └── README.md
 
-👩‍💻 #Author
+#👩‍💻 Author
 
 **Uzma Noorulain**
 
